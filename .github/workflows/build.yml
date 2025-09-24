@@ -20,6 +20,9 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Create native project files
+        run: flutter create .
+
       - name: Build APK
         run: flutter build apk --release
 
